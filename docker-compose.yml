@@ -12,3 +12,4 @@ services:
       WATCHTOWER_ROLLING_RESTART: "true"
       WATCHTOWER_SCHEDULE: "0 30 6 * * WED"
       WATCHTOWER_LABEL_ENABLE: "true"
+    network_mode: bridge
