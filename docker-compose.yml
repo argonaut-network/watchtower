@@ -13,6 +13,8 @@ services:
       WATCHTOWER_SCHEDULE: "0 30 6 * * WED"
       WATCHTOWER_LABEL_ENABLE: "true"
     network_mode: bridge
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true"
 
 networks:
   default:
